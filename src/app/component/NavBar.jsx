@@ -11,10 +11,7 @@ const NavBar = () => {
     const isActive = (path) => pathName === path 
 
     const links = <>
-        {/* <Link href="/" className={pathName === '/' ? 'bg-[#244D3F] text-white' : 'bg-transparent text-white'}>
-            <button className="btn border-none font-semibold"><IoMdHome />
-                Home</button>
-        </Link> */}
+       
         <Link href={"/"} >
             <button className={`btn border-none font-semibold ${isActive("/")? "bg-[#244D3F] text-white":"text-[#64748B] "}`}><IoMdHome />
                 Home</button>

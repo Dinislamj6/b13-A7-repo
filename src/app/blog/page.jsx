@@ -21,7 +21,7 @@ const BlogPage = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/data.json")
+        fetch("https://keenkeeper-my-app.vercel.app/data.json")
             .then(res => res.json())
             .then(data => {
                 setData(data)

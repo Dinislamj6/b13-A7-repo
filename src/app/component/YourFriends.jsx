@@ -2,7 +2,7 @@ import Friends from "./Friends";
 import FriendsCard from "./FriendsCard";
 
 const YourFriends = async() => {
-    const res = await fetch("http://localhost:3000/data.json")
+    const res = await fetch("https://keenkeeper-my-app.vercel.app/data.json")
     const AllData = await res.json();
 
     return (
