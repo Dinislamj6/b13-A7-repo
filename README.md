@@ -2,7 +2,7 @@
 
 KinKeeper is a modern web application designed to streamline family connectivity and information management. Built with a focus on speed and user experience, it provides a seamless way to organize and access important family data in one centralized place.
 
-![Project Screenshot](screenshot.png)
+![Project Screenshot](c:\Users\Din islam\Pictures\Screenshots\Screenshot 2026-04-16 023600.png)
 
 ## 🔗 Live Demo
 Check out the live site here: [KinKeeper Live](https://keenkeeper-my-app.vercel.app/)
