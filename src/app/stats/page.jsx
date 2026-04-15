@@ -1,12 +1,16 @@
 "use client"
 import { Legend, Pie, PieChart, Tooltip } from "recharts";
+import { TimelineContext } from "../context/context";
+import { useContext } from "react";
 
 
-const StatsPage = () => {
+const StatsPage = (type) => {
+    const {timeline, setTimeline} = useContext(TimelineContext)
+    
     const data = [
-        { name: 'call', value: 400, fill: '#0088FE' },
-        { name: 'video', value: 300, fill: '#00C49F' },
-        { name: 'text', value: 300, fill: '#FFBB28' },
+        { name: 'call', value: timeline.filter(i => i.type === "call").length, fill: '#7E35E1' },
+        { name: 'video', value: timeline.filter(i => i.type === "video").length, fill: '#37A163' },
+        { name: 'text', value: timeline.filter(i => i.type === "text").length, fill: '#FFBB28' },
 
     ];
     return (

@@ -17,16 +17,7 @@ const BlogPage = () => {
     const searchParams = useSearchParams()
     const id = searchParams.get("id")
 
-    // const [data, setData] = useState([]);
-    // useEffect(() => {
-    //     fetch("http://localhost:3000/data.json")
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             // console.log(data);
-    //             setData(data);
-    //         });
-    // }, []);
-
+ 
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -193,9 +184,6 @@ const BlogPage = () => {
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
     );
