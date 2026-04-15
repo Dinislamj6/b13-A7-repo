@@ -8,9 +8,9 @@ const StatsPage = (type) => {
     const {timeline, setTimeline} = useContext(TimelineContext)
     
     const data = [
-        { name: 'call', value: timeline.filter(i => i.type === "call").length, fill: '#7E35E1' },
-        { name: 'video', value: timeline.filter(i => i.type === "video").length, fill: '#37A163' },
-        { name: 'text', value: timeline.filter(i => i.type === "text").length, fill: '#FFBB28' },
+        { name: 'call', value: timeline.filter(item => item.type === "call").length, fill: '#7E35E1' },
+        { name: 'video', value: timeline.filter(item => item.type === "video").length, fill: '#37A163' },
+        { name: 'text', value: timeline.filter(item => item.type === "text").length, fill: '#FFBB28' },
 
     ];
     return (

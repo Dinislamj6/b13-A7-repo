@@ -26,8 +26,10 @@ const Footer = () => {
                 </nav>
 
 
-                      {/* justify bet kaj kore nh */}
+                   <div className="border border-t-1 border-gray-300 w-full">
+                   </div>
                 <div className="flex justify-between w-full">
+                  
                     <div>
                          <p>© 2026 KeenKeeper. All rights reserved.</p>
                     </div>
