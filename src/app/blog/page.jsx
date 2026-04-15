@@ -44,7 +44,7 @@ const BlogPage = () => {
         const {timeline, setTimeline} = useContext(TimelineContext)
     
     const callHandler = (singleFriend,type) => {
-        toast.success(`${singleFriend?.name} is ${type}!`)
+        toast.success(`${type} with ${singleFriend?.name}!`)
         setTimeline([...timeline,{...singleFriend,type,date:new Date()},])
         console.log(timeline);
     }
@@ -153,10 +153,10 @@ const BlogPage = () => {
                             <div className="card-body">
                                 <h2 className="text-semibold text-xl text-[#64748B]">Quick Check-In</h2>
                                 {/* call video text */}
-                                <div className="flex items-center gap-3">
+                                <div className="grid gap-3 grid-cols-1 md:grid-cols-3">
 
                                     <button onClick={()=>callHandler(singleFriend,"call")}>
-                                        <div className="card w-45 bg-gray-100 card-xs shadow-sm">
+                                        <div className="card w-full bg-gray-100 card-xs shadow-sm">
 
                                             <div className="flex flex-col justify-center items-center p-5 text-xl">
                                                 <IoCall />
@@ -167,7 +167,7 @@ const BlogPage = () => {
                                     </button>
 
                                     <button onClick={()=> callHandler(singleFriend,"text")}>
-                                         <div className="card w-45 bg-gray-100 card-xs shadow-sm">
+                                         <div className="card w-full bg-gray-100 card-xs shadow-sm">
 
                                             <div className="flex flex-col justify-center items-center p-5 text-xl">
                                                 <IoMdText />
@@ -178,7 +178,7 @@ const BlogPage = () => {
                                     </button>
                                     
                                  <button onClick={() => callHandler(singleFriend,"video")}>
-                                      <div className="card w-45 bg-gray-100 card-xs shadow-sm">
+                                      <div className="card w-full bg-gray-100 card-xs shadow-sm">
 
                                             <div className="flex flex-col justify-center items-center p-5 text-xl">
                                                 <FaVideo />
