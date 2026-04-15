@@ -10,6 +10,7 @@ import { IoCall } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { RiNotificationSnoozeFill } from "react-icons/ri";
 import { TimelineContext } from "../context/context";
+import { toast } from "react-toastify";
 
 
 const BlogPage = () => {
@@ -41,12 +42,13 @@ const BlogPage = () => {
 
         //  handler
         const {timeline, setTimeline} = useContext(TimelineContext)
-        console.log(timeline,"somting");
     
-    const callHandler = (singleFriend) => {
-        console.log("click me call");
-        setTimeline([...timeline,singleFriend])
+    const callHandler = (singleFriend,type) => {
+        toast.success(`${singleFriend?.name} is ${type}!`)
+        setTimeline([...timeline,{...singleFriend,type,date:new Date()},])
+        console.log(timeline);
     }
+    
 
     return (
         <div>
@@ -153,7 +155,7 @@ const BlogPage = () => {
                                 {/* call video text */}
                                 <div className="flex items-center gap-3">
 
-                                    <button onClick={()=>callHandler(singleFriend)}>
+                                    <button onClick={()=>callHandler(singleFriend,"call")}>
                                         <div className="card w-45 bg-gray-100 card-xs shadow-sm">
 
                                             <div className="flex flex-col justify-center items-center p-5 text-xl">
@@ -164,7 +166,7 @@ const BlogPage = () => {
                                         </div>
                                     </button>
 
-                                    <button>
+                                    <button onClick={()=> callHandler(singleFriend,"text")}>
                                          <div className="card w-45 bg-gray-100 card-xs shadow-sm">
 
                                             <div className="flex flex-col justify-center items-center p-5 text-xl">
@@ -175,7 +177,7 @@ const BlogPage = () => {
                                         </div>
                                     </button>
                                     
-                                 <button>
+                                 <button onClick={() => callHandler(singleFriend,"video")}>
                                       <div className="card w-45 bg-gray-100 card-xs shadow-sm">
 
                                             <div className="flex flex-col justify-center items-center p-5 text-xl">

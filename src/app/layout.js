@@ -4,6 +4,7 @@ import NavBar from "./component/NavBar";
 import Footer from "./component/Footer";
 import TimelineProvider from "./context/context";
 import Providers from "./lib/providers";
+import { ToastContainer } from "react-toastify";
 
 
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
           <Footer></Footer>
+             <ToastContainer />
         </Providers>
       </body>
     </html>
