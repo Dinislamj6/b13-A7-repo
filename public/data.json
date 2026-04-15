@@ -7,7 +7,7 @@
     "days_since_contact": 15,
     "status": "overdue",
     "tags": ["office", "mentor"],
-    "bio": "Senior Backend Developer. Helped me with API integration issues last year.",
+    "bio": "Senior Backend Developer & expert mentor.",
     "goal": 7,
     "next_due_date": "2026-04-06"
   },
@@ -19,7 +19,7 @@
     "days_since_contact": 6,
     "status": "almost due",
     "tags": ["freelance", "designer"],
-    "bio": "Expert UI/UX designer. We collaborated on the E-commerce dashboard project.",
+    "bio": "Expert UI/UX designer & collaborator.",
     "goal": 7,
     "next_due_date": "2026-04-15"
   },
@@ -31,7 +31,7 @@
     "days_since_contact": 2,
     "status": "on-track",
     "tags": ["university", "best friend"],
-    "bio": "Study partner from BRAC University. Great at solving competitive programming problems.",
+    "bio": "Study partner & competitive programmer.",
     "goal": 14,
     "next_due_date": "2026-04-26"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 20,
     "status": "overdue",
     "tags": ["family", "cousin"],
-    "bio": "Software Engineer at Google. Always gives the best career roadmap advice.",
+    "bio": "Software Engineer & career mentor.",
     "goal": 10,
     "next_due_date": "2026-04-04"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 1,
     "status": "on-track",
     "tags": ["gym", "health"],
-    "bio": "Fitness enthusiast. We discuss health routines and nutrition plans every week.",
+    "bio": "Health enthusiast & nutrition advisor.",
     "goal": 3,
     "next_due_date": "2026-04-16"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 28,
     "status": "overdue",
     "tags": ["old school", "friend"],
-    "bio": "High school classmate. Currently working as a Project Manager in Dubai.",
+    "bio": "Project Manager & former classmate.",
     "goal": 15,
     "next_due_date": "2026-03-31"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 4,
     "status": "on-track",
     "tags": ["startup", "client"],
-    "bio": "Founder of GreenTech. Working on their official landing page and SEO.",
+    "bio": "Startup founder & key client.",
     "goal": 7,
     "next_due_date": "2026-04-17"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 13,
     "status": "almost due",
     "tags": ["workshop", "writer"],
-    "bio": "Content strategist. Met at the Digital Marketing workshop in Dhaka.",
+    "bio": "Content strategist & workshop lead.",
     "goal": 14,
     "next_due_date": "2026-04-15"
   },
@@ -103,7 +103,7 @@
     "days_since_contact": 2,
     "status": "on-track",
     "tags": ["neighbor", "tech"],
-    "bio": "Full-stack developer living next door. We often share tech news and gadgets.",
+   "bio": "Full-stack developer & tech partner.",
     "goal": 5,
     "next_due_date": "2026-04-17"
   },
@@ -115,7 +115,7 @@
     "days_since_contact": 25,
     "status": "overdue",
     "tags": ["online", "researcher"],
-    "bio": "Ph.D. student. Collaborating on a research paper about AI in healthcare.",
+    "bio": "AI researcher & PhD collaborator.",
     "goal": 20,
     "next_due_date": "2026-04-09"
   },
@@ -127,7 +127,7 @@
     "days_since_contact": 6,
     "status": "almost due",
     "tags": ["cricket", "sports"],
-    "bio": "Captain of our local cricket club. Organizes matches every Friday.",
+    "bio": "Sports organizer & cricket captain.",
     "goal": 7,
     "next_due_date": "2026-04-15"
   },
@@ -139,7 +139,7 @@
     "days_since_contact": 3,
     "status": "on-track",
     "tags": ["investor", "mentor"],
-    "bio": "Angel investor interested in EdTech. Mentoring our team for the seed round.",
+    "bio": "Angel investor & startup mentor.",
     "goal": 30,
     "next_due_date": "2026-05-11"
   }

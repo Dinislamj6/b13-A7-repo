@@ -7,17 +7,38 @@ import { MdBarChart, MdWatchLater } from "react-icons/md";
 
 const NavBar = () => {
     const pathName = usePathname();
+    console.log(pathName);
+    const isActive = (path) => pathName === path 
+
     const links = <>
-        <Link href="/" className={pathName === '/' ? 'text-white bg-[#244D3F]' : ''}>
-            <button className="btn border-none bg-transparent text-[#64748B] font-semibold"><IoMdHome />
+        {/* <Link href="/" className={pathName === '/' ? 'bg-[#244D3F] text-white' : 'bg-transparent text-white'}>
+            <button className="btn border-none font-semibold"><IoMdHome />
+                Home</button>
+        </Link> */}
+        <Link href={"/"} >
+            <button className={`btn border-none font-semibold ${isActive("/")? "bg-[#244D3F] text-white":"text-[#64748B] "}`}><IoMdHome />
                 Home</button>
         </Link>
-
-        <Link href="/timeline" className={pathName === '/timeline' ? 'text-white bg-[#244D3F]' : ''}>
-            <button className="btn border-none bg-transparent text-[#64748B] font-semibold "><MdWatchLater />Timeline</button>
+        <Link href={"/timeline"} >
+            <button className={`btn border-none font-semibold ${isActive("/timeline")? "bg-[#244D3F] text-white":"text-[#64748B] "}`}><MdWatchLater />
+                Timeline</button>
         </Link>
+        <Link href={"/stats"} >
+            <button className={`btn border-none font-semibold ${isActive("/stats")? "bg-[#244D3F] text-white":"text-[#64748B] "}`}><FaChartLine />
+                Stats</button>
+        </Link>
+
+
+
+         {/* <Link href="/timeline" className={pathName === '/timeline' ? 'text-white bg-[#244D3F]' : ''}>
+            <button className="btn border-none bg-transparent text-[#64748B] font-semibold ">Timeline</button>
+        </Link>
+
         <Link href="/stats" className={pathName === '/stats' ? 'text-white bg-[#244D3F]' : ''}>
-            <button className="btn border-none bg-transparent text-[#64748B] font-semibold"><FaChartLine />Stats</button></Link>
+            <button className="btn border-none bg-transparent text-[#64748B] font-semibold">Stats</button></Link> */}
+
+
+       
 
 
     </>

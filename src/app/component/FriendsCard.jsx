@@ -4,12 +4,12 @@ import React from 'react';
 
 const FriendsCard = ({ data }) => {
     return (
-        <Link href={`/blog/${data.id}`}>
+        <Link href={`/blog?id=${data.id}`}>
             <div className="mt-5">
                 <div className="card  bg-base-100 card-sm shadow-sm">
                     <div className="card-body">
                         <div className='flex justify-center items-center'>
-                            <Image className='rounded-full' src={data.picture} alt='friends picture' width={50} height={50}></Image>
+                            <Image className='rounded-full' src={data.picture} alt='friends picture' width={50} height={50}/>
                         </div>
                         <div className='text-center'>
                             <h2 className='font-semibold text-xl'>{data.name}</h2>

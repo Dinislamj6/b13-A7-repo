@@ -24,11 +24,14 @@ const Footer = () => {
                         </a>
                     </div>
                 </nav>
+
+
                       {/* justify bet kaj kore nh */}
-                <div className="flex justify-between gap-10">
+                <div className="flex justify-between w-full">
                     <div>
                          <p>© 2026 KeenKeeper. All rights reserved.</p>
                     </div>
+
                     <div className="flex">
                         <p>Privacy Policy</p>
                         <p> Terms of Service</p>
