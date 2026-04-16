@@ -9,17 +9,16 @@ import massage from "../../assets/text.png"
 
 const TimelinePage = () => {
     const { timeline, setTimeline } = useContext(TimelineContext);
-    const [filterData,setFilterData] = useState(timeline)
+    const [filterData, setFilterData] = useState(timeline)
     console.log(timeline);
     const filterDate = (item) => {
-         const data = timeline.filter(el => el.type === item)
-         setFilterData(data)
+        const data = timeline.filter(el => el.type === item)
+        setFilterData(data)
     }
     return (
         <div className="max-w-5xl mx-auto mt-10">
             <div>
                 <h2 className="font-bold text-2xl">Timeline </h2>
-
                 {/* card part */}
                 <select onChange={(e) => filterDate(e.target.value)} defaultValue="Filter timeline" className="select select-ghost border shadow-3xl border-gray-300 mt-2">
                     <option disabled={true}>Filter timeline</option>
@@ -29,7 +28,7 @@ const TimelinePage = () => {
                 </select>
 
                 {
-                    filterData.map(friend => <div key={friend.id}>
+                    filterData.map((friend,ind) => <div key={ind}>
                         <div className="card w-full bg-base-100 card-xs shadow-sm mt-4 p-2">
                             <div className="flex gap-3">
                                 <div>
@@ -44,14 +43,6 @@ const TimelinePage = () => {
                         </div>
                     </div>)
                 }
-
-
-
-
-
-
-
-
             </div>
         </div>
     );

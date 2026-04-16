@@ -45,6 +45,7 @@ const BlogPage = () => {
         <div>
 
             <div className="grid grid-cols-12  max-w-4xl mx-auto mt-10 gap-4">
+               
                 {/* card image  */}
                 {
                     singleFriend && <div className="md:col-span-4 col-span-12">

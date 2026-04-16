@@ -8,7 +8,7 @@ const YourFriends = async() => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
             {
-                AllData.map((data,idx) =>  <FriendsCard key={idx} data={data}></FriendsCard>)
+                AllData.map((data) =>  <FriendsCard key={data.id} data={data}></FriendsCard>)
             }
         </div>
     );

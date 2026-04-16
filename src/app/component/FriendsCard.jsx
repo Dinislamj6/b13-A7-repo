@@ -6,7 +6,9 @@ const FriendsCard = ({ data }) => {
     return (
         <Link href={`/blog?id=${data.id}`}>
             <div className="mt-5">
-                <div className="card  bg-base-100 card-sm shadow-sm">
+                <div className="card  bg-base-100 border border-zinc-100 card-sm shadow-lg
+                transition delay-110 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100
+                ">
                     <div className="card-body">
                         <div className='flex justify-center items-center'>
                             <Image className='rounded-full' src={data.picture} alt='friends picture' width={50} height={50}/>
